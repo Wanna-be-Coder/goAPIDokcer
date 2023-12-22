@@ -8,20 +8,20 @@ import (
 
 const alphabet = "Thequickbrownfoxjumpsoverthelazydog"
 
-func init(){
+func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
-func RandomFloat(min,max int64) float64{
+func RandomFloat(min, max int64) float64 {
 	v := min + rand.Int63n(max-min+1)
 	return float64(v)
 }
 
-func RandomString(n int) string{
+func RandomString(n int) string {
 	var sb strings.Builder
 	k := len(alphabet)
-	for i:=0;i<n;i++{
-		c:= alphabet[rand.Intn(k)]
+	for i := 0; i < n; i++ {
+		c := alphabet[rand.Intn(k)]
 		sb.WriteByte(c)
 	}
 	return sb.String()
@@ -29,14 +29,17 @@ func RandomString(n int) string{
 }
 
 func RandomOwner() string {
-	return RandomString(6);
+	return RandomString(6)
 }
-func RandomBalance() float64 { 
-	v:= RandomFloat(1,10000)
+func RandomBalance() float64 {
+	v := RandomFloat(1, 10000)
 	return v
 }
-func RandomCurrency() string{
-	currency := []string{"USD","BDT","EURO","PESSO"}
-	n:=len(currency)
+func RandomCurrency() string {
+	currency := []string{"USD", "BDT", "EURO", "PESSO"}
+	n := len(currency)
 	return currency[rand.Intn(n)]
+}
+func RandomId() int64 {
+	return rand.Int63n(100)
 }
