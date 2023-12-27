@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"testing"
 
+	"github.com/Wanna-be-Coder/goAPIDokcer/util"
 	"github.com/stretchr/testify/require"
-	"github.com/teachschool/simplebank/util"
 )
 
 func createNewTransfer(t *testing.T) Transfer {

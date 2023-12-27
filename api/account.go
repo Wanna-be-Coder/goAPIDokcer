@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
+	db "github.com/Wanna-be-Coder/goAPIDokcer/db/sqlc"
 	"github.com/gin-gonic/gin"
-	db "github.com/teachschool/simplebank/db/sqlc"
 )
 
 type createAccountParams struct {

@@ -1,8 +1,8 @@
 package api
 
 import (
+	db "github.com/Wanna-be-Coder/goAPIDokcer/db/sqlc"
 	"github.com/gin-gonic/gin"
-	db "github.com/teachschool/simplebank/db/sqlc"
 )
 
 type Server struct {

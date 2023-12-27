@@ -4,9 +4,9 @@ import (
 	"database/sql"
 	"log"
 
+	"github.com/Wanna-be-Coder/goAPIDokcer/api"
+	db "github.com/Wanna-be-Coder/goAPIDokcer/db/sqlc"
 	_ "github.com/lib/pq"
-	"github.com/teachschool/simplebank/api"
-	db "github.com/teachschool/simplebank/db/sqlc"
 )
 
 const (
