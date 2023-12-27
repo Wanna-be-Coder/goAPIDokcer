@@ -1,4 +1,4 @@
-name: Test Databse Query
+name: Run test
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: ["main"]
 
   test:
-    name: Test
+    name: Check Query
     runs-on: ubuntu-latest
 
     services:
