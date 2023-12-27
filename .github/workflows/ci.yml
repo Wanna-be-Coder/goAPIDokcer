@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: ["main"]
 
-  test:
+  build:
     name: Check Query
     runs-on: ubuntu-latest
 
